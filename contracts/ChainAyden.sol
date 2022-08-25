@@ -82,10 +82,6 @@ contract ChainAyden is ERC721URIStorage {
 
     //mint every should be able to mint an NFTs.
     function mint() public {
-        require(
-            addressToTokenId[msg.sender] == 0,
-            "Sorry you already mint one!"
-        );
         _tokenIds.increment();
         //return the current itemId(uint256).
         uint256 newItemId = _tokenIds.current();
@@ -108,14 +104,5 @@ contract ChainAyden is ERC721URIStorage {
         uint256 currentLevels = tokenIdToLevels[tokenId];
         tokenIdToLevels[tokenId] = currentLevels + 1;
         _setTokenURI(tokenId, getTokenURI(tokenId));
-    }
-
-    //mintCounter.
-    function getMyTokenId() public view returns (uint256) {
-        require(
-            addressToTokenId[msg.sender] != 0,
-            "Sorry please mint one NFTs first!"
-        );
-        return addressToTokenId[msg.sender];
     }
 }

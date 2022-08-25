@@ -15,7 +15,7 @@ async function main() {
   await nftContract.deployed();
   //mint an NFTs
   await nftContract.mint();
-  let tokenId = await nftContract.getMyTokenId();
+  let tokenId = await nftContract.balanceOf(owner.address);
   console.log("So the tokenId is:", tokenId);
 }
 
