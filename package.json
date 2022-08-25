@@ -1,0 +1,23 @@
+{
+  "name": "alchemy-nfts",
+  "version": "1.0.0",
+  "description": "This project is about to make NFTs with On-Chain Metadata with hardhat && Javascript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coffiasd/alchemy-nfts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coffiasd/alchemy-nfts/issues"
+  },
+  "homepage": "https://github.com/coffiasd/alchemy-nfts#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.7.3",
+    "dotenv": "^16.0.1"
+  }
+}
